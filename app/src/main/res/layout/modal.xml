@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/modal_body"
+        android:layout_width="match_parent"
+        android:layout_height="593dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/body"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/tf_icon"
+        android:layout_width="78dp"
+        android:layout_height="94dp"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_alignTop="@id/modal_body"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/icons8_tensorflow_240" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_alignBottom="@id/modal_body"
+        android:layout_marginBottom="30dp"
+        android:text="@string/upload_image"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"/>
+
+    <Button
+        android:id="@+id/rlObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/upload"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/real_time_object_detection"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"/>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:layout_alignBottom="@id/rlObj"
+        android:layout_marginBottom="-38dp"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_alignEnd="@id/modal_body"/>
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_alignTop="@id/modal_body"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_marginVertical="360dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="-3dp"
+        android:text="@string/select"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/MaxResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/max_results"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_marginTop="180dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_alignTop="@id/modal_body"
+        android:maxLength="1"/>
+
+    <EditText
+        android:id="@+id/ScoreThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignStart="@id/modal_body"
+        android:layout_alignEnd="@id/modal_body"
+        android:layout_marginTop="260dp"
+        android:layout_marginHorizontal="60dp"
+        android:hint="@string/score_threshold"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:layout_alignTop="@id/modal_body"/>
+
+</RelativeLayout>

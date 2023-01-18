@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:fromAlpha = "20"/>
+    <scale android:fromXScale="20dp"/>
+    <scale android:fromYScale="20dp"/>
+    <scale android:toXScale="100dp"/>
+    <scale android:toYScale="100dp"/>
+    <alpha android:toAlpha="100"/>
+</set>
